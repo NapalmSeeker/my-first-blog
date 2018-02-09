@@ -1,0 +1,11 @@
+{% extends 'store/base_page.html' %}
+
+{% block content %}
+{% for docs in doc %}
+
+<hr>
+	<h1>{{docs.name}}</h1> 
+	<hr>
+	<h3>{{docs.text}}</h3>
+{% endfor %}
+{% endblock %}

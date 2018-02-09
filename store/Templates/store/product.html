@@ -1,0 +1,11 @@
+{% extends 'store/base_page.html' %}
+{% block content %}
+	Products:
+	<hr>
+	{% for prds in prd %}
+		<h3 class="productes">{{ prds }}</h3>
+		<h4> price:{{ prds.price }}$</h4> 
+		<button><a class="but" href="{{prds.pk}}">описание</a></button>
+		<hr>
+{% endfor %}
+{% endblock %}
